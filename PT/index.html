@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Verification Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <h1 class="title">Price Verification Tool</h1>
+
+    <div class="form-row">
+      <label for="productSelect" class="form-label">Product Name</label>
+
+      <select id="productSelect">
+        <option value="" selected disabled>Select Product</option>
+      </select>
+    </div>
+
+    <button id="getPriceBtn" type="button">Get Price</button>
+
+    <p id="statusMsg" class="status-msg" aria-live="polite"></p>
+
+    <p id="priceDisplay" class="price">Price : P 0.00</p>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
